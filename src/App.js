@@ -1,25 +1,30 @@
-import logo from './logo.svg';
-import './App.css';
+import "./Style.css";
+import Weather from "./Weather.js";
 
-function App() {
+export default function App() {
+  const cities = [
+    {
+      city: "Tokyo",
+      bgColor: "tomato",
+    },
+    {
+      city: "London",
+      bgColor: "limegreen",
+    },
+    {
+      city: "Paris",
+      bgColor: "orange",
+    },
+    {
+      city: "Los Angeles",
+      bgColor: "deepskyblue",
+    },
+  ];
   return (
-    <div className="App">
-      <header className="App-header">
-        <img src={logo} className="App-logo" alt="logo" />
-        <p>
-          Edit <code>src/App.js</code> and save to reload.
-        </p>
-        <a
-          className="App-link"
-          href="https://reactjs.org"
-          target="_blank"
-          rel="noopener noreferrer"
-        >
-          Learn React
-        </a>
-      </header>
+    <div className="outline">
+      {cities.map((city, index) => (
+        <Weather key={index} city={city.city} bgColor={city.bgColor} />
+      ))}
     </div>
   );
 }
-
-export default App;

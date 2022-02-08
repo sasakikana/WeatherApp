@@ -1,0 +1,36 @@
+/* App.jsの<div class="outline">のcss */
+.outline {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  flex-wrap: wrap;
+  margin: auto;
+  width: 100%;
+  height: 100vh;
+}
+
+/* weather.js内のcss */
+.card:hover {
+  transform: scale(1.1);
+  transition-property: transform;
+}
+.flex {
+  display: flex;
+  padding: 4px;
+  margin-top: 6px;
+  justify-content: space-between;
+}
+dt {
+  font-weight: 300;
+}
+dd {
+  font-weight: 500;
+  font-size: 1.125rem;
+  line-height: 1.75rem;
+  letter-spacing: 0.1em;
+}
+.image {
+  padding: 1rem 1rem 0 0;
+  width: 5rem;
+  height: 5rem;
+}
