@@ -5,7 +5,7 @@ export default function App() {
   const cities = [
     {
       city: "Tokyo",
-      bgColor: "tomato",
+      bgColor: "red",
     },
     {
       city: "London",
